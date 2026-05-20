@@ -19,21 +19,21 @@ export default function Hero() {
     const blurValue = useTransform(scrollY, [0, 800], [0, 10]);
     const filter = useMotionTemplate`blur(${blurValue}px)`;
     const track1 = [
+        "/hero-slider/makise-kurisu-2.webp",
         "/hero-slider/atam-1.webp",
-        "/hero-slider/kintaro-1.webp",
+        "/hero-slider/kintaro-2.webp",
+        "/hero-slider/makise-kurisu-1.webp",
         "/hero-slider/atam-2.webp",
-        "/hero-slider/kintaro-1.webp",
-        "/hero-slider/atam-3.webp",
-        "/hero-slider/kintaro-1.webp",
+        "/hero-slider/kintaro-1.webp"
     ];
 
     const track2 = [
-        "/hero-slider/atam-1.webp",
         "/hero-slider/kintaro-1.webp",
         "/hero-slider/atam-2.webp",
-        "/hero-slider/kintaro-1.webp",
-        "/hero-slider/atam-3.webp",
-        "/hero-slider/kintaro-1.webp",
+        "/hero-slider/makise-kurisu-1.webp",
+        "/hero-slider/kintaro-2.webp",
+        "/hero-slider/atam-1.webp",
+        "/hero-slider/makise-kurisu-2.webp"
     ];
 
     const col1Images = [...track1, ...track1];
@@ -49,7 +49,7 @@ export default function Hero() {
     return (
         <section
             ref={containerRef}
-            className="sticky top-0 h-screen w-full flex flex-col justify-between bg-background px-container md:px-16 pt-28 pb-12 sm:pt-32 sm:pb-16 overflow-hidden"
+            className="sticky top-0 h-screen w-full flex flex-col justify-between bg-background px-container md:px-16 pt-28 pb-12 sm:pt-32 sm:pb-16 2xl:pb-24 overflow-hidden"
             id="home"
         >
             <InteractiveParticles />
@@ -110,7 +110,7 @@ export default function Hero() {
 
             <motion.div
                 style={{ opacity, scale, y, filter }}
-                className="relative z-20 flex-1 flex flex-col gap-6 sm:gap-12 xl:gap-16 2xl:gap-20 justify-end w-full h-full will-change-[opacity,transform,filter]"
+                className="relative z-20 flex-1 flex flex-col gap-6 sm:gap-12 xl:gap-16 justify-end w-full h-full will-change-[opacity,transform,filter]"
             >
 
                 <div className="flex justify-between items-start w-full">
@@ -141,7 +141,7 @@ export default function Hero() {
 
                 <div className="w-full mt-auto flex flex-col justify-center relative z-20 mix-blend-difference">
                     <div className="overflow-hidden">
-                        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[200px] font-black tracking-tighter leading-[0.85] text-foreground uppercase whitespace-nowrap">
+                        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[140px] font-black tracking-tighter leading-[0.85] text-foreground uppercase whitespace-nowrap">
                             Kintaro
                             <br />
                             <span className="text-foreground/80">
