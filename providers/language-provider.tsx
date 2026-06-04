@@ -1,22 +1,36 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect, useMemo } from "react";
-import en from "@/content/en.json";
-import tr from "@/content/tr.json";
-import { STORAGE_KEYS, LOCALE_CONFIG } from "@/lib/constants";
+import React, { createContext, useContext, useMemo } from "react";
+import { Locale } from "@/lib/types";
 
-type Content = typeof en;
-export type Language = typeof LOCALE_CONFIG.SUPPORTED[number];
+type Content = Record<string, any>;
 
 interface LanguageContextType {
-    language: Language;
+    language: Locale;
     content: any;
-    setLanguage: (lang: Language) => void;
+    setLanguage: (lang: Locale) => void;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-const dictionaries: Record<Language, Content> = { en, tr };
+function deepMerge(target: any, source: any): any {
+    const result = { ...target };
+    for (const key of Object.keys(source)) {
+        if (
+            source[key] &&
+            typeof source[key] === "object" &&
+            !Array.isArray(source[key]) &&
+            target[key] &&
+            typeof target[key] === "object" &&
+            !Array.isArray(target[key])
+        ) {
+            result[key] = deepMerge(target[key], source[key]);
+        } else {
+            result[key] = source[key];
+        }
+    }
+    return result;
+}
 
 const parseContentWithHtml = (data: any): any => {
     if (typeof data === "string") {
@@ -48,29 +62,27 @@ const parseContentWithHtml = (data: any): any => {
     return data;
 };
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-    const [language, setLanguageState] = useState<Language>(LOCALE_CONFIG.DEFAULT);
+interface LanguageProviderProps {
+    children: React.ReactNode;
+    lang: Locale;
+    dictionary: Content;
+    contents: Content;
+}
 
-    useEffect(() => {
-        const savedLang = localStorage.getItem(STORAGE_KEYS.LANGUAGE) as Language;
+export function LanguageProvider({ children, lang, dictionary, contents }: LanguageProviderProps) {
+    const processedContent = useMemo(() => {
+        const merged = deepMerge(dictionary, contents);
+        return parseContentWithHtml(merged);
+    }, [dictionary, contents]);
 
-        if (savedLang && LOCALE_CONFIG.SUPPORTED.includes(savedLang)) {
-            setLanguageState(savedLang);
-        }
-    }, []);
-
-    const setLanguage = (lang: Language) => {
-        setLanguageState(lang);
-        localStorage.setItem(STORAGE_KEYS.LANGUAGE, lang);
-        document.documentElement.lang = lang;
+    const setLanguage = (newLang: Locale) => {
+        const currentPath = window.location.pathname;
+        const newPath = currentPath.replace(`/${lang}`, `/${newLang}`);
+        window.location.href = newPath;
     };
 
-    const processedContent = useMemo(() => {
-        return parseContentWithHtml(dictionaries[language]);
-    }, [language]);
-
     const value = {
-        language,
+        language: lang,
         content: processedContent,
         setLanguage,
     };

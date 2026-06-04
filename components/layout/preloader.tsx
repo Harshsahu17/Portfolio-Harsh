@@ -2,12 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useLanguage } from "@/providers/language-provider";
 import { useTheme } from "next-themes";
 
 export function Preloader() {
     const [isLoading, setIsLoading] = useState(true);
-    const { language } = useLanguage();
     const { theme } = useTheme();
 
     useEffect(() => {
@@ -24,7 +22,7 @@ export function Preloader() {
             clearTimeout(timer);
             document.body.style.overflow = "";
         };
-    }, [language, theme]);
+    }, [theme]);
 
     return (
         <AnimatePresence>

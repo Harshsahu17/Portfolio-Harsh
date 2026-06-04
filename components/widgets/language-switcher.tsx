@@ -2,7 +2,8 @@
 
 import { Check, Globe } from "lucide-react";
 import { useLanguage } from "@/providers/language-provider";
-import { LOCALE_CONFIG } from "@/lib/constants";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 import {
     DropdownMenu,
@@ -13,12 +14,11 @@ import {
 import { cn } from "@/lib/utils";
 
 export default function LanguageSwitcher() {
-    const { language, setLanguage } = useLanguage();
+    const { language } = useLanguage();
+    const pathname = usePathname();
 
-    const handleLanguageChange = (lang: string) => {
-        if (LOCALE_CONFIG.SUPPORTED.includes(lang as any)) {
-            setLanguage(lang as any);
-        }
+    const getLocalizedPath = (targetLang: string) => {
+        return pathname.replace(`/${language}`, `/${targetLang}`);
     };
 
     return (
@@ -35,17 +35,21 @@ export default function LanguageSwitcher() {
                 </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="z-[120] bg-background/95 backdrop-blur-xl border-border/50 shadow-2xl rounded-2xl min-w-[140px] p-2">
-                <DropdownMenuItem onClick={() => handleLanguageChange("en")} className="rounded-xl cursor-pointer my-0.5 focus:bg-secondary">
-                    <span className={cn("mr-2 flex h-3.5 w-3.5 items-center justify-center")}>
-                        {language === "en" && <Check className="h-3.5 w-3.5" />}
-                    </span>
-                    <span className="text-xs tracking-widest uppercase">English</span>
+                <DropdownMenuItem asChild className="rounded-xl cursor-pointer my-0.5 focus:bg-secondary">
+                    <Link href={getLocalizedPath("en")}>
+                        <span className={cn("mr-2 flex h-3.5 w-3.5 items-center justify-center")}>
+                            {language === "en" && <Check className="h-3.5 w-3.5" />}
+                        </span>
+                        <span className="text-xs tracking-widest uppercase">English</span>
+                    </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleLanguageChange("tr")} className="rounded-xl cursor-pointer my-0.5 focus:bg-secondary">
-                    <span className={cn("mr-2 flex h-3.5 w-3.5 items-center justify-center")}>
-                        {language === "tr" && <Check className="h-3.5 w-3.5" />}
-                    </span>
-                    <span className="text-xs tracking-widest uppercase">Türkçe</span>
+                <DropdownMenuItem asChild className="rounded-xl cursor-pointer my-0.5 focus:bg-secondary">
+                    <Link href={getLocalizedPath("tr")}>
+                        <span className={cn("mr-2 flex h-3.5 w-3.5 items-center justify-center")}>
+                            {language === "tr" && <Check className="h-3.5 w-3.5" />}
+                        </span>
+                        <span className="text-xs tracking-widest uppercase">Türkçe</span>
+                    </Link>
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
