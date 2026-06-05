@@ -1,12 +1,3 @@
-<a href="README.md">
-  <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white" alt="English">
-</a>
-<a href="README-TR.md">
-  <img src="https://img.shields.io/badge/Dil-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
-</a>
-
-  <br />
-  <br />
 
 <div align="center">
   <img src="public/logo.png" width="120" height="120" />
@@ -35,13 +26,6 @@
   <br />
 </div>
 
-## ❤️ Thank you for your support!
-
-Seeing this project receive stars and forks recently has made me really happy. I originally built it just for myself. I know that changing the personal information to use it in your own portfolio might be a bit inconvenient. To solve this, I'll be working on improvements to make customization easier.
-
-## 📋 About
-
-**Kintarowwards** is an open-source, highly interactive personal portfolio template inspired by top-tier Awwwards-winning websites. It features smooth scrolling, physics-based micro-interactions, dynamic theme switching, and a fully multilingual system designed to deliver a premium user experience. Every detail is crafted to leave a lasting impression while maintaining high performance and clean code standards.
 
 ## <a id="features"></a> ✨ Features
 
@@ -71,8 +55,8 @@ Follow the steps below to run the project in your local environment:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/xkintaro/kintarowwwards.git
-   cd kintarowwwards
+   git clone https://github.com/Harshsahu17/Portfolio-Harsh.git
+   cd PORTFOLIO-HARSH
    ```
 
 2. **Install dependencies:**
@@ -96,5 +80,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 #
 
 <p align="center">
-  <sub>❤️ Developed by "Mustafa TAŞAL" (kintaro)</sub>
+  <sub>❤️ Developed by Harsh</sub>
 </p>
