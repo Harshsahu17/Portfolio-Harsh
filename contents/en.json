@@ -1,153 +1,147 @@
 {
     "hero": {
-        "title": "I *help* founders turn *ideas* into seamless digital experiences",
-        "stats": "***Startup*** Ready Solutions"
+        "title": "I *help* teams turn *ideas* into seamless digital experiences",
+        "stats": "***MERN Stack*** Developer"
     },
     "about": {
-        "intro": "A developer who grows through *self-driven projects* and turns ideas into **real products**.",
-        "description": "A *web development-focused* mindset; building on both frontend and backend, learning new technologies through **hands-on experimentation**, and prioritizing ***maintainable code***.",
-        "full": "I have been actively involved in software development for the past few years, mostly improving myself through my own projects. Turning an idea into a working product is the part I enjoy the most.\n\nI mainly work in web development. I have built projects using technologies such as React, Next.js, Node.js, Express, and Laravel, working on both frontend and backend. I also gained experience in data management with MongoDB and PostgreSQL. Additionally, I developed desktop applications using C# and WinForms, and more recently started experimenting with lightweight modern desktop apps using Tauri (Rust).\n\nDepending on the need, I also work with different tools. For example, I have built projects involving media processing using FFmpeg. I enjoy exploring new technologies, and I generally believe the best way to learn something is by using it directly.\n\nIn my projects, I don't consider it enough for something to just \"work\"; I try to keep things as clean, understandable, and maintainable as possible. When I face a problem, instead of quickly moving on, I prefer to dig into it and understand how it actually works.\n\nMy current goal is to work on larger, real-world impactful projects and further improve myself, especially in backend development and system design."
+        "intro": "A developer who grows through *hands-on projects* and turns ideas into **real products**.",
+        "description": "A *MERN stack-focused* mindset; building on both frontend and backend, learning through **direct experimentation**, and writing ***clean, maintainable code***.",
+        "full": "I'm a Computer Science student at IES Institute of Technology and Management, Bhopal, graduating in 2026 with a CGPA of 7.5. Over the past few years, I've been deeply invested in building real-world web applications — the kind that actually solve problems.\n\nMy core stack is MERN: MongoDB, Express.js, React.js, and Node.js. I enjoy working across the full stack — designing REST APIs, handling authentication flows, and building responsive frontends that feel great to use.\n\nSome of the things I've built include a production-ready authentication API with JWT rotating tokens and Gmail OAuth2 OTP delivery, an Airbnb-inspired vacation rental platform with full CRUD, role-based access control, and Cloudinary image uploads, and a zero-dependency browser-based image editor using the HTML5 Canvas API with 9 real-time filters and 18 one-click presets.\n\nBeyond web, I actively practice Data Structures and Algorithms in Java on LeetCode (100+ problems solved). I've also earned an Elite + Gold Certificate in Java Programming from IIT Kharagpur via NPTEL — awarded to the top 5% of participants nationwide.\n\nRight now, I'm focused on deepening my backend knowledge — auth systems, database design, API architecture — and building projects that are genuinely useful and well-crafted."
     },
     "manifesto": {
         "items": [
-            "RADICAL TRANSPARENCY",
-            "INTENTIONAL MINIMALISM",
-            "ARCHITECTURAL INTEGRITY",
-            "FIRST PRINCIPLES THINKING",
-            "PERFORMANCE WITHOUT COMPROMISE",
-            "SCALABLE VISION"
+            "CLEAN ARCHITECTURE",
+            "FULL STACK THINKING",
+            "PERFORMANCE FIRST",
+            "API-DRIVEN DESIGN",
+            "SECURITY BY DEFAULT",
+            "SHIP REAL PRODUCTS"
         ]
     },
     "stack": {
         "items": [
             {
-                "title": "Frontend Technologies",
+                "title": "Frontend",
                 "items": [
-                    { "name": "React", "icon": "https://cdn.simpleicons.org/react" },
-                    { "name": "Next.js", "icon": "https://cdn.simpleicons.org/nextdotjs" },
-                    { "name": "Tailwind CSS", "icon": "https://cdn.simpleicons.org/tailwindcss" },
-                    { "name": "Bootstrap", "icon": "https://cdn.simpleicons.org/bootstrap" },
-                    { "name": "Framer Motion", "icon": "https://cdn.simpleicons.org/framer" },
-                    { "name": "TypeScript", "icon": "https://cdn.simpleicons.org/typescript" },
+                    { "name": "React.js", "icon": "https://cdn.simpleicons.org/react" },
                     { "name": "JavaScript", "icon": "https://cdn.simpleicons.org/javascript" },
                     { "name": "HTML5", "icon": "https://cdn.simpleicons.org/html5" },
-                    { "name": "CSS3", "icon": "https://www.svgrepo.com/show/452185/css-3.svg" }
+                    { "name": "CSS3", "icon": "https://www.svgrepo.com/show/452185/css-3.svg" },
+                    { "name": "Tailwind CSS", "icon": "https://cdn.simpleicons.org/tailwindcss" },
+                    { "name": "Bootstrap", "icon": "https://cdn.simpleicons.org/bootstrap" }
                 ]
             },
             {
-                "title": "Backend Technologies",
+                "title": "Backend",
                 "items": [
                     { "name": "Node.js", "icon": "https://cdn.simpleicons.org/nodedotjs" },
-                    { "name": "PHP", "icon": "https://cdn.simpleicons.org/php" },
-                    { "name": "Laravel", "icon": "https://cdn.simpleicons.org/laravel" },
-                    { "name": "ASP.NET", "icon": "https://cdn.simpleicons.org/dotnet" },
-                    { "name": "Rust", "icon": "https://cdn.simpleicons.org/rust" },
-                    { "name": "C#", "icon": "https://www.svgrepo.com/show/452184/csharp.svg" },
-                    { "name": "Python", "icon": "https://cdn.simpleicons.org/python" },
-                    { "name": "Discord.js", "icon": "https://cdn.simpleicons.org/discord" }
+                    { "name": "Express.js", "icon": "https://cdn.simpleicons.org/express" },
+                    { "name": "REST APIs", "icon": "https://cdn.simpleicons.org/fastapi" },
+                    { "name": "JWT", "icon": "https://cdn.simpleicons.org/jsonwebtokens" }
                 ]
             },
             {
-                "title": "Databases & ORMs",
+                "title": "Database",
                 "items": [
-                    { "name": "PostgreSQL", "icon": "https://cdn.simpleicons.org/postgresql" },
                     { "name": "MySQL", "icon": "https://cdn.simpleicons.org/mysql" },
                     { "name": "MongoDB", "icon": "https://cdn.simpleicons.org/mongodb" },
-                    { "name": "Prisma", "icon": "https://cdn.simpleicons.org/prisma" },
-                    { "name": "Neon", "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/neon-tech.png" }
+                    { "name": "Mongoose", "icon": "https://cdn.simpleicons.org/mongoose" }
                 ]
             },
             {
-                "title": "Tools & Infrastructure",
+                "title": "Tools & Developer Env",
                 "items": [
                     { "name": "Git", "icon": "https://cdn.simpleicons.org/git" },
-                    { "name": "Vercel", "icon": "https://cdn.simpleicons.org/vercel" },
-                    { "name": "Tauri", "icon": "https://cdn.simpleicons.org/tauri" }
+                    { "name": "GitHub", "icon": "https://cdn.simpleicons.org/github" },
+                    { "name": "Postman", "icon": "https://cdn.simpleicons.org/postman" },
+                    { "name": "VS Code", "icon": "https://cdn.simpleicons.org/visualstudiocode" },
+                    { "name": "Cloudinary", "icon": "https://cdn.simpleicons.org/cloudinary" }
                 ]
             }
         ]
     },
     "projects": {
-        "intro": "A collection of *experiments*, *products*, and *digital artifacts* forged in the **void**.",
+        "intro": "A collection of *APIs*, *platforms*, and *tools* built with a focus on **real-world impact**.",
         "items": [
             {
                 "id": "1",
-                "title": "Aether Media",
-                "category": "Media Tool",
-                "year": "2026",
-                "description": "Aether Media is a powerful desktop media converter built with Tauri, supporting video, image and audio format conversions with batch processing.",
-                "image": "/projects/20260427093247885.jpg",
-                "repo": "https://github.com/xkintaro/aether-media",
-                "stack": ["FFmpeg", "Rust", "Tauri", "React", "TailwindCSS"]
+                "title": "Yt-Auth",
+                "category": "REST API",
+                "year": "2024",
+                "description": "A production-ready authentication REST API with 7 endpoints built using Node.js, Express 5, and MongoDB. Covers full user lifecycle — registration, OTP email verification, JWT login, and multi-device session management. Features rotating refresh tokens with SHA-256 hashing, httpOnly cookies to prevent XSS, and Gmail OAuth2 via Nodemailer with MongoDB TTL indexes for zero-maintenance OTP and session expiry.",
+                "image": "/projects/yt-auth.jpg",
+                "repo": "https://github.com/Harshsahu17/Yt-Auth",
+                "stack": ["Node.js", "Express.js", "MongoDB", "JWT", "OAuth2", "Nodemailer"]
             },
             {
                 "id": "2",
-                "title": "Aether JS",
-                "category": "Library",
-                "year": "2026",
-                "description": "AetherJS is a utility-first JavaScript controller built for modern web applications, minimizing DOM manipulation. Say goodbye to complex state management.",
-                "image": "/projects/20260427093247620.jpg",
-                "demo": "https://xkintaro.github.io/aether-js-documentation/en.html",
-                "repo": "https://github.com/xkintaro/aether-js",
-                "stack": ["JavaScript"]
+                "title": "Wanderlust",
+                "category": "Full Stack App",
+                "year": "2024",
+                "description": "An Airbnb-inspired vacation rental platform with full CRUD for listings and reviews, built using Node.js, Express.js, MongoDB Atlas, and Bootstrap 5 with MVC architecture. Features user authentication and role-based authorization via Passport.js, Cloudinary image uploads with Multer, Joi schema validation, and a 5-star rating review system.",
+                "image": "/projects/wanderlust.jpg",
+                "repo": "https://github.com/Harshsahu17/Wanderlust",
+                "stack": ["Node.js", "Express.js", "MongoDB", "Passport.js", "Cloudinary", "EJS", "Bootstrap"]
             },
             {
                 "id": "3",
-                "title": "File Manager",
-                "category": "Web Application",
-                "year": "2025",
-                "description": "Kintaro File Manager is a self-hosted file management application with a cyberpunk-inspired interface. It lets you upload, organize, tag, and filter any type of file through a sleek, modern web interface backed by SQLite — no external database required.",
-                "image": "/projects/20260305210513749.jpg",
-                "repo": "https://github.com/xkintaro/file-manager",
-                "stack": ["React", "TailwindCSS", "Node.js", "SQLite"]
+                "title": "Image Filter Editor",
+                "category": "Browser Tool",
+                "year": "2024",
+                "description": "A zero-dependency browser-based image editor using the HTML5 Canvas API, CSS3, and Vanilla JavaScript — no build tools or frameworks, resulting in sub-second load times. Features 9 real-time filter controls (brightness, contrast, saturation, blur, etc.), 18 one-click presets (Vintage, Cyberpunk, Noir, etc.), one-click PNG export, and full cross-browser compatibility.",
+                "image": "/projects/image-editor.jpg",
+                "repo": "https://github.com/Harshsahu17/Image-Editor",
+                "stack": ["HTML5", "CSS3", "JavaScript", "Canvas API"]
             }
         ]
     },
     "roadmap": {
-        "description": "A roadmap where I share the experiences I've gained throughout my software journey and the technologies I've learned.",
+        "description": "A timeline of my journey through computer science, from writing my first lines of code to shipping full-stack applications.",
         "items": [
             {
                 "id": "01",
                 "year": "2022",
-                "description": "I first started programming in high school. In an object-oriented programming course, I learned the fundamentals and logic of programming using C#.",
-                "tags": ["C#"]
+                "description": "Started my B.Tech in Computer Science at IES Institute of Technology and Management, Bhopal. Got my first real exposure to programming fundamentals, OOP concepts, and Data Structures.",
+                "tags": ["Java", "OOP", "DSA"]
             },
             {
                 "id": "02",
                 "year": "2023",
-                "description": "I began building static and dynamic websites by learning HTML, CSS, and ASP.NET. I also learned how to use databases in my projects.",
-                "tags": ["HTML", "CSS", "ASP.NET", "MySQL"]
+                "description": "Dived into web development — learning HTML, CSS, and JavaScript. Built my first static and dynamic websites. Started solving DSA problems on LeetCode to strengthen algorithmic thinking.",
+                "tags": ["HTML", "CSS", "JavaScript", "LeetCode"]
             },
             {
                 "id": "03",
                 "year": "2024",
-                "description": "It was my final year of high school. I fully improved myself in UI development with CSS and continued writing ASP.NET at the place where I was doing my internship.",
-                "tags": ["HTML", "CSS", "ASP.NET", "MySQL"]
+                "description": "Went full-stack with the MERN stack. Built real projects — a production-ready Auth API, a vacation rental platform, and a browser-based image editor. Earned Elite + Gold certification in Java from IIT Kharagpur (NPTEL).",
+                "tags": ["React.js", "Node.js", "Express.js", "MongoDB", "NPTEL"]
             },
             {
                 "id": "04",
                 "year": "2025",
-                "description": "After graduating from high school, I focused on technologies such as React, Node.js, Tailwind CSS, and MongoDB. During my learning process, I developed many websites and applications. Additionally, I started writing simple tools in Python for my own use.",
-                "tags": ["React", "Node.js", "TailwindCSS", "MongoDB"]
+                "description": "Deepened backend knowledge — JWT auth systems, REST API design, database optimization, and security best practices. Crossed 100+ DSA problems on LeetCode. Focused on building more scalable and production-grade applications.",
+                "tags": ["REST APIs", "JWT", "MongoDB Atlas", "DSA"]
             },
             {
                 "id": "05",
                 "year": "2026",
-                "description": "I am currently doing an internship at a place called PostAjans. Here, I have focused on Laravel. Additionally, in my free time, I develop websites with Next.js; with the help of AI, even if I do not fully know a language, I create projects using various technologies such as Rust, Tauri, and FFmpeg.",
-                "tags": ["Laravel", "Next.js", "PostgreSQL"]
+                "description": "Final year of B.Tech. Graduating in 2026. Actively seeking full-time opportunities in full-stack or backend development. Working on projects that demonstrate real-world architectural decisions and clean code standards.",
+                "tags": ["Full Stack", "Open to Work"]
             }
         ]
     },
     "contact": {
-        "description": "Whether we start fresh to bring a project to life or take an existing system further.",
-        "email": "mustafw42@gmail.com",
-        "phone": "Not added yet."
+        "description": "Open to full-time roles, internships, and interesting projects. Let's build something together.",
+        "email": "harshsahu17102004@gmail.com",
+        "phone": "+91-6267252362",
+        "resume": "Resume - Harsh Sahu"
     },
     "social": {
         "title": "SOCIAL",
         "items": [
-            { "label": "GitHub", "href": "https://github.com/xkintaro" },
-            { "label": "Discord", "href": "https://discord.gg/NSQk27Zdkv" }
+            { "label": "GitHub", "href": "https://github.com/Harshsahu17" },
+            { "label": "LinkedIn", "href": "https://linkedin.com/in/harshs17" },
+            { "label": "LeetCode", "href": "https://leetcode.com/harshsahu17" }
         ]
     }
 }

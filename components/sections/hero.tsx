@@ -20,21 +20,21 @@ export default function Hero() {
     const blurValue = useTransform(scrollY, [0, 800], [0, 10]);
     const filter = useMotionTemplate`blur(${blurValue}px)`;
     const track1 = [
-        "/hero-slider/makise-kurisu-2.webp",
-        "/hero-slider/atam-1.webp",
-        "/hero-slider/kintaro-2.webp",
-        "/hero-slider/makise-kurisu-1.webp",
-        "/hero-slider/atam-2.webp",
-        "/hero-slider/kintaro-1.webp"
+        "/hero-slider/harsh6.webp",
+        "/hero-slider/harsh1.webp",
+        "/hero-slider/harsh4.webp",
+        "/hero-slider/harsh5.webp",
+        "/hero-slider/harsh2.webp",
+        "/hero-slider/harsh3.webp"
     ];
 
     const track2 = [
-        "/hero-slider/kintaro-1.webp",
-        "/hero-slider/atam-2.webp",
-        "/hero-slider/makise-kurisu-1.webp",
-        "/hero-slider/kintaro-2.webp",
-        "/hero-slider/atam-1.webp",
-        "/hero-slider/makise-kurisu-2.webp"
+        "/hero-slider/harsh3.webp",
+        "/hero-slider/harsh2.webp",
+        "/hero-slider/harsh5.webp",
+        "/hero-slider/harsh4.webp",
+        "/hero-slider/harsh1.webp",
+        "/hero-slider/harsh6.webp"
     ];
 
     const col1Images = [...track1, ...track1];

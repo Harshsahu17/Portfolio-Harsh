@@ -18,10 +18,13 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   title: APP_CONFIG.NAME,
   description: APP_CONFIG.DESC,
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'tr' }];
+  return [{ lang: 'en' }];
 }
 
 export default async function LangLayout({
