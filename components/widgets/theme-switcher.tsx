@@ -1,6 +1,6 @@
 "use client";
 
-import { Moon, Sun, Laptop } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import {
@@ -36,10 +36,7 @@ export default function ThemeSwitcher() {
           <Moon className="mr-2 h-3.5 w-3.5" />
           <span className="text-xs tracking-widest uppercase">Dark</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")} className="rounded-xl cursor-pointer my-0.5 focus:bg-secondary">
-          <Laptop className="mr-2 h-3.5 w-3.5" />
-          <span className="text-xs tracking-widest uppercase">System</span>
-        </DropdownMenuItem>
+
       </DropdownMenuContent>
     </DropdownMenu>
   );
